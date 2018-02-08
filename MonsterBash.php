@@ -7,7 +7,7 @@
  */
 
 include 'Monster.php';
-include 'Vampire.php';
+include 'vampire.php';
 
 $monster = new Monster();
 $monster1 = new Monster('bob');
