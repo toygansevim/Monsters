@@ -8,6 +8,7 @@
 
 include 'Monster.php';
 include 'vampire.php';
+include 'zombie.php';
 
 $monster = new Monster();
 $monster1 = new Monster('bob');
@@ -21,7 +22,16 @@ echo $monster->getName();
 echo $monster1->getName();
 
 $vampire1 = new Vampire('Toygan');
+$zombie = new zombie('ToyganZombie');
 $vampire2 = new Vampire();
+$zombie1 = new zombie();
 
+
+echo "Vampire time<br>";
 echo $vampire1->getName() . $vampire1->getVictims() . "<br>";
 echo $vampire1->getName() . $vampire1->getVictims() . "<br>";
+
+echo "zombie time<br>";
+echo $zombie->getName() . $zombie->getBrainsEaten() . "<br>";
+echo $zombie1->getName() . $zombie1->getBrainsEaten() . "<br>";
+
