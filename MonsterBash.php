@@ -29,9 +29,13 @@ $zombie1 = new zombie();
 
 echo "Vampire time<br>";
 echo $vampire1->getName() . $vampire1->getVictims() . "<br>";
+$vampire1->attack();
 echo $vampire1->getName() . $vampire1->getVictims() . "<br>";
 
 echo "zombie time<br>";
+$zombie->attack();
 echo $zombie->getName() . $zombie->getBrainsEaten() . "<br>";
+$zombie1->attack();
+$zombie1->attack();
 echo $zombie1->getName() . $zombie1->getBrainsEaten() . "<br>";
 
