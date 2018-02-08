@@ -13,12 +13,12 @@ class Vampire extends Monster
     public function __construct($name = "DefaultVampire")
     {
         $this->setName($name);
-        $victims = 0;
+        $this->victims = 0;
     }
 
     function attack()
     {
-        $this->victims++;
+        $this->victims = $this->victims + 1;
         echo $this->getName() . " has attacked and killed " . $this->getVictims() . " victims.";
     }
 
